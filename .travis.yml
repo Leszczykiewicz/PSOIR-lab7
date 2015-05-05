@@ -2,3 +2,13 @@ language: node_js
 node_js:
 - '0.10'
 before_install: npm install -g mocha
+deploy:
+  provider: s3
+  access_key_id: AKIAJFAWTT7OQTYVYHUA
+  secret_access_key:
+    secure: DBMj2jrFQTdQYYrWhxXZZ3b5rfqDf0Yx3Kn/0LlUTmoIQYryn+/eiI2gWX2TKgz+adTUqThJYBH3QvgyDz6ZDMxuI+jgYwfZvELiNcQA1rcv7OCZ6AGqcNcXT32z5n94u8i5alzdxVNwkHACsMy0joFtFZMnmsffXTIW2q/2Hb0=
+  bucket: lab4-weeia
+  upload-dir: agnieszka.leszczynska
+  acl: ''
+  on:
+    repo: Leszczykiewicz/PSOIR-lab7
